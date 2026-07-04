@@ -324,5 +324,10 @@ padding: 0;
   .artist-photo-frame{width:220px;height:300px}
   .btn{padding:.45rem .7rem;font-size:.95rem}
   .artist-name{font-size:1.6rem}
+  .songs-grid{grid-template-columns:1fr}
+  .song{flex-direction:column;align-items:flex-start}
+  .song img{width:100%;height:auto}
+  .song-info{width:100%}
+  .song-info a{width:100%;text-align:center}
 }
 
