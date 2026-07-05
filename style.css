@@ -254,7 +254,6 @@ padding: 0;
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
-  background-attachment:fixed;
 }
 #songs::before{
   content:'';
@@ -329,5 +328,15 @@ padding: 0;
   .song img{width:100%;height:auto}
   .song-info{width:100%}
   .song-info a{width:100%;text-align:center}
+}
+
+@media print {
+  body, #songs, #songs::before {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  #songs {
+    background-attachment: scroll;
+  }
 }
 
